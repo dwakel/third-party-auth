@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  pg:
+    image: postgres:12
+    restart: always
+    environment:
+      POSTGRES_DB: tracker
+      POSTGRES_USER: tracker
+      POSTGRES_PASSWORD: 1
+    ports:
+      - "5401:5432"

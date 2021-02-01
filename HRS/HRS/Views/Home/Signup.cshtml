@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Signup";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sign In</h1>
+    <div>
+        <form asp-controller="Home" asp-action="Signup" method="post">
+            <div>@(ViewData["error"])</div>
+            <fieldset>
+                <div>
+                    <label>Name</label>
+                    <input type="text" name="Name" />
+                </div>
+                <div>
+                    <label>PhoneNumber</label>
+                    <input type="text" name="PhoneNumber" />
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="Email" />
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="Password" />
+                </div>
+
+                <input type="submit" value="Submit"/>
+            </fieldset>
+
+        </form>
+    </div>
+
+</div>

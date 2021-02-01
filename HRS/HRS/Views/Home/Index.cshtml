@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Human Resource App";
+}
+
+<div class="text-center">
+
+    <h1 class="display-4">Sign In</h1>
+    <div>
+        <form asp-controller="Home" asp-action="Index" method="post">
+            <div style="color:#FF0000">@(ViewData["error"])</div>
+            <fieldset>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="Email" />
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="Password" />
+                </div>
+
+                <input type="submit" value="Submit" />
+
+            </fieldset>
+
+        </form>
+    </div>
+
+    <p><a class="nav-link text-dark" href="Home/TrackerLogin">Login With tracker</a></p>
+
+
+    <p>Dont have an account <a class="nav-link text-dark" href="Home/Signup">click here</a> to sign up!</p>
+
+</div>

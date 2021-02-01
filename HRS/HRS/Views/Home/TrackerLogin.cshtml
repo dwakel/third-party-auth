@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "TrackerLogin";
+}
+<h1>@ViewData["Title"]</h1>
+
+<h1 class="display-4">Sign In with tracker</h1>
+<div>
+    <div style="color:#FF0000">@(ViewData["error"])</div>
+    <form asp-controller="Home" asp-action="TrackerLogin" method="post">
+        <fieldset>
+            <div>
+                <label>Email</label>
+                <input type="email" name="Email" />
+            </div>
+            <div>
+                <label>Password</label>
+                <input type="password" name="Password" />
+            </div>
+
+            <input type="submit" value="Submit" />
+        </fieldset>
+
+    </form>
+</div>

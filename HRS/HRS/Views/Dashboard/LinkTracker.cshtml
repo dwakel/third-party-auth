@@ -1,0 +1,24 @@
+﻿<div class="text-center">
+
+    <h1 class="display-4">Tracker Link</h1>
+    <div>
+        <form asp-controller="Dashboard" asp-action="LinkTracker" method="post">
+            <div style="color:#FF0000">@(ViewData["3rdPartError"])</div>
+            <fieldset>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="Email" />
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="Password" />
+                </div>
+
+                <input type="submit" value="Submit" />
+
+            </fieldset>
+
+        </form>
+    </div>
+
+</div>
